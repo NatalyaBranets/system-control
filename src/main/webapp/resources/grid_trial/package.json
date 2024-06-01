@@ -1,0 +1,16 @@
+{
+  "name": "dhx-grid-package",
+  "version": "8.3.12",
+  "description": "dhtmlxGrid widget",
+  "homepage": "https://docs.dhtmlx.com/grid",
+  "private": true,
+  "bugs": {
+    "url": "https://forum.dhtmlx.com",
+    "email": "support@dhtmlx.com"
+  },
+  "main": "codebase/grid.js",
+  "types": "codebase/grid.d.ts",
+  "dependencies": {
+    "@mescius/wijmo.input": "^5.20241.9"
+  }
+}

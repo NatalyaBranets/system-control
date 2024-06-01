@@ -1,0 +1,286 @@
+/* Grid */
+.grid-container {
+    height: 50%;
+    margin-top: 30px;
+}
+
+/* New K-Pac form */
+#newKpac {
+    * {
+        box-sizing: border-box;
+        width: 100%;
+    }
+
+    /* Add padding to containers */
+    .container {
+        padding: 16px;
+        background-color: white;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    /* Full-width input fields */
+    input[type=text] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    }
+
+    input[type=text]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+
+    /* Overwrite default styles of hr */
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+
+    /* Set a style for the submit button */
+    .submitbtn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 25%;
+        opacity: 0.9;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+
+    .submitbtn:hover {
+        opacity: 1;
+    }
+}
+
+/* New K-Pac Set form */
+#newKpacSet {
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Add padding to containers */
+    .container {
+        padding: 16px;
+        background-color: white;
+    }
+
+    .container h1 {
+        text-align: center;
+    }
+
+    /* Full-width input fields */
+    input[type=text] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    }
+
+    input[type=text]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
+
+    /* Overwrite default styles of hr */
+    hr {
+        border: 1px solid #f1f1f1;
+        margin-bottom: 25px;
+    }
+
+    #kpacsSelectionContainer {
+        display: flex;
+        flex-direction: column;
+        max-height: 10em;
+        overflow: auto;
+        border: 1px solid #e0d6d6;
+        margin-top: 5px;
+        margin-bottom: 20px;
+
+        label {
+            padding: 5px;
+        }
+    }
+
+    /* Set a style for the submit button */
+    .submitbtn {
+        background-color: #04AA6D;
+        color: white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 25%;
+        opacity: 0.9;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+
+    .submitbtn:hover {
+        opacity: 1;
+    }
+}
+
+/* Home page */
+#home {
+    /* Set height to 100% for body and html to enable the background image to cover the whole page: */
+    body, html {
+        height: 100%
+    }
+
+    .bgimg {
+        /* Background image */
+        background-image: url('/resources/images/welcome.jpg');
+        /* Full-screen */
+        height: 100%;
+        /* Center the background image */
+        background-position: center;
+        /* Scale and zoom in the image */
+        background-size: cover;
+        /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+        position: relative;
+        /* Add a white text color to all elements inside the .bgimg container */
+        color: white;
+        /* Add a font */
+        font-family: "Courier New", Courier, monospace;
+        /* Set the font-size to 25 pixels */
+        font-size: 25px;
+    }
+
+    /* Position text in the top-left corner */
+    .topleft {
+        position: absolute;
+        top: 0;
+        left: 16px;
+    }
+
+    /* Position text in the middle */
+    .middle {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    /* Style the <hr> element */
+    hr {
+        margin: auto;
+        width: 80%;
+    }
+
+    .title-container {
+        background-color: #D3D3D3FF;
+        border-radius: 19px;
+        opacity: 0.9;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    }
+
+    .title h1 {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .nav {
+        width: 50%;
+        display: inline-block;
+        list-style: none;
+        padding: 0;
+        margin-top: 40px;
+    }
+
+    .nav li {
+        box-shadow: rgba(99, 99, 99, 0.2) 0 2px 8px 0;
+    }
+    .nav  li:hover {
+        background-color: #bdbbbb;
+    }
+
+    .nav  li  a {
+        display: block;
+        line-height: 44px;
+        color: #656262;
+        text-decoration: none;
+        outline: 0;
+        padding: 5px 20px;
+    }
+
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 11111; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Custom */
+.button-container {
+    display: flex;
+    justify-content: end;
+}
+
+.new-button {
+    margin-top: 30px;
+    margin-right: 40px;
+    border: solid #E0DFDFFF;
+    border-radius: 8px;
+    padding: 10px 24px;
+    font-size: 14px;
+    background-color: #e7e7e7;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.new-button:hover {
+    cursor: pointer;
+    background-color: #d5d4d4;
+}
+
+.deleteIcon:hover {
+    cursor: pointer;
+}
